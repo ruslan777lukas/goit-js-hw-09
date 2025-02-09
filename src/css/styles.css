@@ -5,11 +5,33 @@
   |============================
 */
 /* Common styles */;
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  align-content: center;
+  justify-content:center;
+  width: 1440px;
+  height: 696px;
+  column-gap: 24px;
+  row-gap: 20px;
+  opacity: 0px;
+}
+
+img {
+  width: 360px;
+  height: 200px;
+  opacity: 0px;
+}
+
+.gallery-image {
+  cursor: pointer;
+}
 
 /* Sections style */
-@import url('./badges.css');
-@import url('./footer.css');
 @import url('...node_modules/simplelightbox/dist/simple-lightbox.min.css');
