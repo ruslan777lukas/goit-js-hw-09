@@ -4,15 +4,12 @@
   | default @import url()
   |============================
 */
-/* Common styles */
-@import url('./reset.css');
+/* Common styles */;
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
-@import url('./back-link.css');
 @import url('./footer.css');
+@import url('...node_modules/simplelightbox/dist/simple-lightbox.min.css');
