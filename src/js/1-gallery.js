@@ -1,9 +1,6 @@
-import SimpleLightbox from '/Projects/goit-js-hw-09/node_modules/simplelightbox';
-import '../node_modules/simplelightbox/dist/simple-lightbox.min.css';
-const lightbox = new SimpleLightbox('.gallery', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -74,15 +71,20 @@ const galleryContainer = document.querySelector('.gallery');
 const galleryMarkup = images
   .map(
     ({ preview, original, description }) =>
-      `<li class="gallery-item">
-        <a class="gallery-link" href="${original}">
-          <img
-            class="gallery-image"
-            src="${preview}"
-            alt="${description}"
-          />
-        </a>
-      </li>`
+      `<li class="gallery-item"><a class="gallery-link" href="${original}"><img class="gallery-image" src="${preview}" alt="${description}"/></a></li>`
   )
   .join('');
 galleryContainer.innerHTML = galleryMarkup;
+
+// galleryContainer.addEventListener('click', e => {
+//   e.preventDefault();
+//   if (e.target === e.currentTarget) {
+//     return;
+//   }
+// });
+console.log(galleryContainer);
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
