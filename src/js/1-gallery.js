@@ -1,6 +1,6 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-const lightbox = new SimpleLightbox('.gallery a', {
+import SimpleLightbox from '/Projects/goit-js-hw-09/node_modules/simplelightbox';
+import '../node_modules/simplelightbox/dist/simple-lightbox.min.css';
+const lightbox = new SimpleLightbox('.gallery', {
   captionsData: 'alt',
   captionDelay: 250,
 });

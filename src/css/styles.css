@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.gallery {
+.gallery-item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
