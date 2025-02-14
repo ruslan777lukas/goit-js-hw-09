@@ -67,7 +67,6 @@ const images = [
   },
 ];
 const galleryContainer = document.querySelector('.gallery');
-// Makeup
 const galleryMarkup = images
   .map(
     ({ preview, original, description }) =>
@@ -76,12 +75,6 @@ const galleryMarkup = images
   .join('');
 galleryContainer.innerHTML = galleryMarkup;
 
-// galleryContainer.addEventListener('click', e => {
-//   e.preventDefault();
-//   if (e.target === e.currentTarget) {
-//     return;
-//   }
-// });
 console.log(galleryContainer);
 
 const lightbox = new SimpleLightbox('.gallery a', {

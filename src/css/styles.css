@@ -1,10 +1,9 @@
-/* Sections style */
 @import url('node_modules/simplelightbox/dist/simple-lightbox.min.css');
 
 * {
   box-sizing: border-box;
 }
-
+/* task 1========================================================================================= */
 .gallery {
   margin: 0 auto;
   display: flex;
@@ -66,7 +65,7 @@
   cursor: pointer;
 }
 
-/* ============================================================================================== */
+/* task 2============================================================================================== */
 input,
 input:active {
   display: flex;
