@@ -42,8 +42,8 @@ initPage();
 
 refs.form.addEventListener('submit', e => {
   e.preventDefault();
-  formData.email = refs.form.elements.email.value;
-  formData.message = refs.form.elements.message.value;
+  formData.email = refs.form.elements.email.value.trim();
+  formData.message = refs.form.elements.message.value.trim();
   if (formData.email === '' || formData.message === '') {
     alert('Fill please all fields');
     return;
